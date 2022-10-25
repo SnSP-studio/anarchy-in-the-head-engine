@@ -1,17 +1,17 @@
 #include "Block.h"
 #include "Physics.h"
 
-Block::Block(int id, Position position) {
+Block::Block(int id = 0, Position* bposition = new Position()) {
 	_id = id;
-	_position = position;
+	_position* = bposition*;
 };
 
-Block::Block(int id = 0, Position position = new Position(), int color, char symbol, bool collision) {
+Block::Block(int id = 0, Position* bposition = new Position(), int* color, char* symbol, bool* collision) {
 	_id = id;
-	_position = position;
-	_color = color;
-	_symbol = symbol;
-	_collision = collision;
+	_position* = bposition*;
+	_color* = color*;
+	_symbol* = symbol*;
+	_collision* = collision*;
 };
 
 Entity::getId() {

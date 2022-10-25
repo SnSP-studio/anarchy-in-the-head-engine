@@ -7,12 +7,12 @@ using namespace std;
 
 static Entity player = Entity(0, 32, 100, '%', Point(10, 20));
 
-/*static Block BlockList[4] = {
+static Block BlockList[4] = {
 	Block(0, 0, ' ', false),
 	Block(1, 33, '#', true),
 	Block(2, 34, '+', false),
 	Block(3, 31, '+', false)
-};*/
+};
 
 static Block XY[20][40];
 

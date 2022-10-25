@@ -6,14 +6,14 @@
 class Block {
 private:
 	int _id;
-	Position _position;
+	Position* _position;
 public:
-	int _color;
-	char _symbol;
-	bool _collision;
+	int* _color;
+	char* _symbol;
+	bool* _collision;
 
-	Block(int id = 0, Position position);
-	Block(int id = 0, Position position, int color, char symbol, bool collision);
+	Block(int id = 0, Position* bposition = new Position());
+	Block(int id = 0, Position* bposition = new Position(), int* color, char* symbol, bool* collision);
 
 	int getId();
 	Position getPosition();
